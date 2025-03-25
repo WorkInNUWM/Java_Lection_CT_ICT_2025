@@ -36,6 +36,7 @@ public class ArrayApp {
 //		in.close();
 		int b[]= {45,56,67,34,87,42,35,84};
 		int c[]=new int[10];
+		System.out.println(b);
 		System.out.println(Arrays.toString(b));
 		Arrays.sort(b);
 		System.out.println(Arrays.toString(b));
