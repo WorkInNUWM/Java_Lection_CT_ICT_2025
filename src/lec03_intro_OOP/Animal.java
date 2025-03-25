@@ -1,5 +1,7 @@
 package lec03_intro_OOP;
 
+import java.util.Objects;
+
 public class Animal {
 	static int count=0;
 //	public String type;
@@ -70,7 +72,32 @@ public class Animal {
 
 	public void setColor(String color) {
 		this.color = color;
+	}
+
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(age, color, name, type);
+//	}
+
+	@Override
+	public boolean equals(Object obj) { // ==
+//		if (this == obj) //reference
+//			return true;
+//		if (obj == null) 
+//			return false;
+//		if (getClass() != obj.getClass()) 
+//			return false;
+		Animal other = (Animal) obj;
+//		return age == other.age && Objects.equals(color, other.color) && Objects.equals(name, other.name)
+//				&& Objects.equals(type, other.type);
+		
+		if (this.name.equalsIgnoreCase(other.getName())) {
+			if(this.age==other.getAge())
+				return true;
+		}
+		return false;
 	} 
+	
 	
 	
 }
