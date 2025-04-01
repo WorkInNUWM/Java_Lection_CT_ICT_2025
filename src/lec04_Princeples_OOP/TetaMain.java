@@ -13,6 +13,9 @@ public class TetaMain {
 		System.out.println(dog);
 		cat.eat();
 		dog.eat();
+		((Cat) cat).eat();
+	
+		
 	}
 
 }

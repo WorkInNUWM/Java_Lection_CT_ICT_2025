@@ -17,6 +17,7 @@ public class Cat extends Animal{
 	public void setPorodaCat(String porodaCat) {
 		this.porodaCat = porodaCat;
 	}
+	
 	@Override
 	public String toString() {
 		return "Cat porodaCat=" + porodaCat + " ["+super.toString()+"]";
