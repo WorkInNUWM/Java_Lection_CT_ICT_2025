@@ -9,7 +9,7 @@ public class TastApp {
 		Cat catPushok=new Cat();
 		Cat catTom=new Cat("Tom");
 		Dog dogChapa=new Dog();
-		dogChapa.name="Cahapa";
+//		dogChapa.name="Cahapa";
 		MyPetList myPets= new MyPetList();
 		myPets.add(catPushok); //[0]
 		myPets.add(dogChapa);  //[1]
